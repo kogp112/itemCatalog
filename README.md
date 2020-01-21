@@ -1,18 +1,27 @@
-### backend
-install momgodb
+## This demo app is item catalog page.
+
+## backend
+
+#### install momgodb
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 
-install express
-$ npm i express-generator -g
-$ express --view=pug backend
+#### install express
+
 $ cd backend/
 $ npm install
+$ npm i express-generator -g
+$ express --view=pug backend
+
+#### run backend server
+
 $ DEBUG=backend:* npm start
 
 
+## frontend
 
-### frontend
-create frontend directory
-execute npx create-react-app
+#### create react app
+$ npx create-react-app 'myapp'
 
-# itemCatalog
+#### run frontend server
+$ npm start
+
