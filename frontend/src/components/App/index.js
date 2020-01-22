@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../containers/Button'
+import Genre from '../../containers/Genre'
 import Color from '../../containers/Color'
 import List from '../../containers/List'
 import styled from 'styled-components'
@@ -23,34 +23,12 @@ class App extends React.Component {
                 <Lists>
                     <Route path="/" render={() => <List />} />
                 </Lists>
-                <UlGenre>
-                    <LiGenre>
-                        <Button genre="skirt" />
-                    </LiGenre>
-                    <LiGenre>
-                        <Button genre="pants" />
-                    </LiGenre>
-                    <LiGenre>
-                        <Button genre="shirt" />
-                    </LiGenre>
-                </UlGenre>
+                <Genre />
                 <Color />
             </Router>
         )
     }
 }
-
-
-const UlGenre = styled.ul`
-    width: 170px;
-    margin: 50px 50px 0px 0px;
-    list-style: none outside;
-`;
-
-const LiGenre = styled.li`
-    list-style: none;
-    margin: 5px 0px 0px 0px;
-`;
 
 const Lists = styled.ul`
     width: 200px;
