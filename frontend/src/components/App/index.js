@@ -34,29 +34,12 @@ class App extends React.Component {
                         <Button genre="shirt" />
                     </LiGenre>
                 </UlGenre>
-                <UlColor>
-                    <LiColor>
-                        <Color color="red" />
-                    </LiColor>
-                    <LiColor>
-                        <Color color="yellow" />
-                    </LiColor>
-                    <LiColor>
-                        <Color color="blue" />
-                    </LiColor>
-                    <LiColor>
-                        <Color color="green" />
-                    </LiColor>
-                </UlColor>
+                <Color />
             </Router>
         )
     }
 }
 
-const UlColor = styled.ul`
-    width: 170px;
-    list-style: none outside;
-`;
 
 const UlGenre = styled.ul`
     width: 170px;
@@ -67,13 +50,6 @@ const UlGenre = styled.ul`
 const LiGenre = styled.li`
     list-style: none;
     margin: 5px 0px 0px 0px;
-`;
-
-const LiColor = styled.li`
-    padding: 0;
-    margin: 5px;
-    float: left;
-    width: 75px;
 `;
 
 const Lists = styled.ul`

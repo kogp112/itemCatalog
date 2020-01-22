@@ -23,7 +23,6 @@ let genre = ''
 let api = ''
 
 export const showItem = (props) => {
-    console.log('props is', props)
     if ( props.genre !== undefined ) {
         api = "http://localhost:3000/data?genre=" + props.genre
         if (props.genre === 'skirt') {
