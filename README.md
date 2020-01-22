@@ -1,4 +1,4 @@
-## This demo app is item catalog page.
+### This demo app is item catalog page.
 
 ## backend
 
@@ -7,6 +7,7 @@ https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 
 #### install express
 ```
+$ mkdir backend/
 $ cd backend/
 $ npm install
 $ npm i express-generator -g

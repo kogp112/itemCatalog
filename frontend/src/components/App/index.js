@@ -20,39 +20,34 @@ class App extends React.Component {
     render() {
         return (
             <Router>
-                <div>
-                    <Lists>
-                        <Route path="/" render={() => <List />} />
-                    </Lists>
-                    <UlGenre>
-                        <LiGenre>
-                            <Button genre="skirt" />
-                        </LiGenre>
-                        <LiGenre>
-                            <Button genre="pants" />
-                        </LiGenre>
-                        <LiGenre>
-                            <Button genre="shirt" />
-                        </LiGenre>
-                    </UlGenre>
-                    <UlColor>
-                        <LiColor>
-                            <Color color="red" />
-                        </LiColor>
-                        <LiColor>
-                            <Color color="yellow" />
-                        </LiColor>
-                        <LiColor>
-                            <Color color="blue" />
-                        </LiColor>
-                        <LiColor>
-                            <Color color="green" />
-                        </LiColor>
-                    </UlColor>
-                    <Switch>
-                        <Route path="/" component={List} />
-                    </Switch>
-                </div>
+                <Lists>
+                    <Route path="/" render={() => <List />} />
+                </Lists>
+                <UlGenre>
+                    <LiGenre>
+                        <Button genre="skirt" />
+                    </LiGenre>
+                    <LiGenre>
+                        <Button genre="pants" />
+                    </LiGenre>
+                    <LiGenre>
+                        <Button genre="shirt" />
+                    </LiGenre>
+                </UlGenre>
+                <UlColor>
+                    <LiColor>
+                        <Color color="red" />
+                    </LiColor>
+                    <LiColor>
+                        <Color color="yellow" />
+                    </LiColor>
+                    <LiColor>
+                        <Color color="blue" />
+                    </LiColor>
+                    <LiColor>
+                        <Color color="green" />
+                    </LiColor>
+                </UlColor>
             </Router>
         )
     }

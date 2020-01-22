@@ -22,7 +22,7 @@ class ColorButton extends React.Component {
     return (
       <div>
         <Button onClick={this.props.onClick}>
-        <Img src={imgSrc} />
+          <Img src={imgSrc} />
         </Button>
       </div>
     )
@@ -45,4 +45,5 @@ const Img = styled.img`
   width: 75px;
   height: 75px;
 `;
+
 export default ColorButton
