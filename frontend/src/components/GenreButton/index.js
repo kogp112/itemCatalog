@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const GenreButton = ({ onClick, genre }) => (
-    <div>
-        <Button onClick={onClick}>{genre}</Button>
-    </div>
+  <Link to="/">
+    <Button onClick={onClick}>{genre}</Button>
+  </Link>
 )
 
 export default GenreButton

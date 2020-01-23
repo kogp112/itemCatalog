@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import redImage from '../../assets/img/color_button/red.png'
 import blueImage from '../../assets/img/color_button/blue.png'
 import greenImage from '../../assets/img/color_button/green.png'
@@ -21,9 +22,11 @@ class ColorButton extends React.Component {
     
     return (
       <div>
-        <Button onClick={this.props.onClick}>
-          <Img src={imgSrc} />
-        </Button>
+        <Link to="/">
+          <Button onClick={this.props.onClick}>
+            <Img src={imgSrc} />
+          </Button>
+        </Link>
       </div>
     )
   }
