@@ -21,7 +21,7 @@ class ItemList extends React.Component {
             return null
         }
         return (
-            <div>
+            <>
                 <UlList>
                     {this.props.items.map(item => (
                         <List>
@@ -32,7 +32,7 @@ class ItemList extends React.Component {
                         </List>
                     ))}
                 </UlList>
-            </div>
+            </>
         )
     }
 }
