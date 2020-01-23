@@ -2,20 +2,10 @@ const changeButton = (state = [], action) => {
     switch(action.type) {
         case 'SHOW_ALL':
             return {...state, items: action.items}
-        case 'SHOW_SKIRT':
-            return {...state, items: action.items}
-        case 'SHOW_PANTS':
-            return {...state, items: action.items}
-        case 'SHOW_SHIRT':
-            return {...state, items: action.items}
-        case 'SHOW_RED':
-            return {...state, items: action.items}
-        case 'SHOW_BLUE':
-            return {...state, items: action.items}
-        case 'SHOW_YELLOW':
-            return {...state, items: action.items}
-        case 'SHOW_GREEN':
-            return {...state, items: action.items}
+        case 'SHOW_COLOR':
+            return {...state, items: action.items, color: action.color}
+        case 'SHOW_GENRE':
+            return {...state, items: action.items, genre: action.genre}
         case 'NOT_SHOW':
             return {...state, items: []}
         default:
