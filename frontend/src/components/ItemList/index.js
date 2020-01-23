@@ -1,13 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Detail from '../../containers/Detail'
-
-import {
-    BrowserRouter as Router,
-    Link,
-    Route
-  } from "react-router-dom"
-  
+import { Link } from 'react-router-dom'
 
 class ItemList extends React.Component {
     constructor(props) {
@@ -28,21 +21,18 @@ class ItemList extends React.Component {
             return null
         }
         return (
-            <Router>
-                <div>
-                    <UlList>
-                        {this.props.items.map(item => (
-                            <List>
-                                    <Link to={{pathname: "/detail", query: {item}}} onClick={this.handleToDetailPage}>
-                                    <img src={require(`../../assets/img/item_image/${item.name}.png`)} height="200px" width="200px"/>
-                                    {item.name}
-                                    </Link>
-                            </List>
-                        ))}
-                    </UlList>
-                </div>
-                <Route path="/detail" component={Detail} />
-            </Router>
+            <div>
+                <UlList>
+                    {this.props.items.map(item => (
+                        <List>
+                            <Link to={{ pathname: '/detail/' + item.name, query: { item } }} onClick={this.handleToDetailPage}>
+                                <img src={require(`../../assets/img/item_image/${item.name}.png`)} height="200px" width="200px"/>
+                                {item.name}
+                            </Link>
+                        </List>
+                    ))}
+                </UlList>
+            </div>
         )
     }
 }

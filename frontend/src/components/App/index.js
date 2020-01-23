@@ -2,10 +2,10 @@ import React from 'react'
 import Genre from '../../containers/Genre'
 import Color from '../../containers/Color'
 import List from '../../containers/List'
-import styled from 'styled-components'
+import Detail from '../../containers/Detail'
+
 import {
     BrowserRouter as Router,
-    Switch,
     Route,
   } from "react-router-dom"
 
@@ -20,7 +20,11 @@ class App extends React.Component {
     render() {
         return (
             <Router>
-                <Route exact path={'/'} component={List}/>
+                <Route exact path={'/'}>
+                    <List />
+                </Route>
+                <Route path={'/detail/:name'}
+                    render={props => <Detail item={this.items} {...props} />}/>
                 <Genre />
                 <Color />
             </Router>
