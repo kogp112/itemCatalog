@@ -56,7 +56,8 @@ const List = styled.li`
 
 const UlList = styled.ul`
     width: 500px;
-    margin: 0;
+    margin: 0 40% 0 0;
+    float: right;
 `;
 
 

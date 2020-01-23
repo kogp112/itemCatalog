@@ -20,21 +20,12 @@ class App extends React.Component {
     render() {
         return (
             <Router>
-                <Lists>
-                    <Route path="/" render={() => <List />} />
-                </Lists>
+                <Route exact path={'/'} component={List}/>
                 <Genre />
                 <Color />
             </Router>
         )
     }
 }
-
-const Lists = styled.ul`
-    width: 200px;
-    margin: 0 68% 0 0;
-    padding: 0px;
-    float: right;
-`;
 
 export default App;
